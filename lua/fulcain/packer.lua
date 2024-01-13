@@ -31,7 +31,14 @@ return require('packer').startup(function(use)
 
     -- Harpoon (file binder) (<C-e>)
 
-    use('theprimeagen/harpoon')
+    use({ 
+        'theprimeagen/harpoon' ,
+        branch = "harpoon2",
+        requires = {
+            'nvim-telescope/telescope.nvim',
+            'nvim-lua/plenary.nvim'
+        }
+    })
 
     -- A pluging that tracks the changes to the file since the start of editing
     -- (<leader>u)
