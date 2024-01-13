@@ -22,9 +22,9 @@ require('onedark').setup  {
     code_style = {
         comments = 'italic',
         keywords = 'bold',
-        functions = 'bold',
-        strings = 'bold',
-        variables = 'bold'
+        functions = 'none',
+        strings = 'none',
+        variables = 'none'
     },
 
     -- Lualine options --
