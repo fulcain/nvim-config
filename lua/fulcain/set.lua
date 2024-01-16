@@ -46,3 +46,6 @@ vim.opt.spell = true
 
 -- Syntax highlight for html template literals
 vim.g.htl_all_templates = true
+
+-- Change cursor in all modes to block
+vim.opt.guicursor = "n-v-c-i:block"
