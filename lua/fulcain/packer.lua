@@ -12,10 +12,15 @@ return require('packer').startup(function(use)
 
     -- telescope (Fuzzy finder)
     use {
-        'nvim-telescope/telescope.nvim', 
-        -- tag = '0.1.5',
-        branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.5',
+        requires = { 
+            'nvim-lua/plenary.nvim',
+            "nvim-telescope/telescope-live-grep-args.nvim"
+        },
+        config = function()
+            require("telescope").load_extension("live_grep_args")
+        end
     }
 
     -- Themes
