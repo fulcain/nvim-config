@@ -5,7 +5,7 @@ vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 -- 	builtin.grep_string({ search = vim.fn.input("Grep > ") });
 -- end)
 
-vim.keymap.set("n", "<leader>ps", "<cmd>: lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>")
+vim.keymap.set("n", "<leader>ps", builtin.live_grep)
 
 vim.keymap.set('n', '<C-p>', 'builtin.git_files', {})
 
