@@ -148,6 +148,7 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    use("dstein64/vim-startuptime")
 end)
 
 
