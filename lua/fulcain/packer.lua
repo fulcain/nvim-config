@@ -7,11 +7,26 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- ThePrimeagen plugins
+
     -- Vim prac game
     use('ThePrimeagen/vim-be-good')
 
     -- Vim apm
     use('ThePrimeagen/vim-apm')
+
+    -- Harpoon (file binder) (<C-e>)
+    use({ 
+        'theprimeagen/harpoon' ,
+        branch = "harpoon2",
+        requires = {
+            'nvim-telescope/telescope.nvim',
+            'nvim-lua/plenary.nvim'
+        }
+    })
+
+    -- telescope suggested plugin fro live_grep and grep_string
+    use("BurntSushi/ripgrep")
 
     -- telescope (Fuzzy finder)
     use {
@@ -36,17 +51,6 @@ return require('packer').startup(function(use)
             ts_update()
         end,
     }
-
-    -- Harpoon (file binder) (<C-e>)
-
-    use({ 
-        'theprimeagen/harpoon' ,
-        branch = "harpoon2",
-        requires = {
-            'nvim-telescope/telescope.nvim',
-            'nvim-lua/plenary.nvim'
-        }
-    })
 
     -- A pluging that tracks the changes to the file since the start of editing
     -- (<leader>u)
@@ -109,6 +113,7 @@ return require('packer').startup(function(use)
     use('brenoprata10/nvim-highlight-colors')
     -- Template literal syntax highlight
     use('jonsmithers/vim-html-template-literals')
+
     -- js and ts for vim
     use('leafgarland/typescript-vim')
     use('pangloss/vim-javascript')
