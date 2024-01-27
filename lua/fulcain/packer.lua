@@ -25,20 +25,13 @@ return require('packer').startup(function(use)
         }
     })
 
-    -- telescope suggested plugin fro live_grep and grep_string
-    use('BurntSushi/ripgrep')
-
-    use('sharkdp/fd')
-
     -- telescope (Fuzzy finder)
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.5',
         requires = { 
             'nvim-lua/plenary.nvim',
-            'BurntSushi/ripgrep',
             'nvim-tree/nvim-web-devicons',
-            'sharkdp/fd'
         }
     }
 
