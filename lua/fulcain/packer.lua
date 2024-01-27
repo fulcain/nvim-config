@@ -10,6 +10,9 @@ return require('packer').startup(function(use)
     -- Vim prac game
     use('ThePrimeagen/vim-be-good')
 
+    -- Vim apm
+    use('ThePrimeagen/vim-apm')
+
     -- telescope (Fuzzy finder)
     use {
         'nvim-telescope/telescope.nvim',
@@ -85,7 +88,7 @@ return require('packer').startup(function(use)
     use('alvan/vim-closetag') 
     use('mattn/emmet-vim')
     use('AndrewRadev/tagalong.vim')
-    use('jiangmiao/auto-pairs')
+    -- use('jiangmiao/auto-pairs')
     use {
         "lukas-reineke/indent-blankline.nvim",
         config = function()
