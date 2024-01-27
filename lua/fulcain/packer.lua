@@ -26,7 +26,9 @@ return require('packer').startup(function(use)
     })
 
     -- telescope suggested plugin fro live_grep and grep_string
-    use("BurntSushi/ripgrep")
+    use('BurntSushi/ripgrep')
+
+    use('sharkdp/fd')
 
     -- telescope (Fuzzy finder)
     use {
@@ -34,9 +36,9 @@ return require('packer').startup(function(use)
         tag = '0.1.5',
         requires = { 
             'nvim-lua/plenary.nvim',
-            "BurntSushi/ripgrep",
-            "nvim-tree/nvim-web-devicons",
-            "sharkdp/fd"
+            'BurntSushi/ripgrep',
+            'nvim-tree/nvim-web-devicons',
+            'sharkdp/fd'
         }
     }
 
@@ -52,7 +54,7 @@ return require('packer').startup(function(use)
         end,
     }
 
-    -- A pluging that tracks the changes to the file since the start of editing
+    -- A plugin that tracks the changes to the file since the start of editing
     -- (<leader>u)
     use('mbbill/undotree')
 
@@ -94,11 +96,11 @@ return require('packer').startup(function(use)
     use('AndrewRadev/tagalong.vim')
     -- use('jiangmiao/auto-pairs')
     use {
-        "lukas-reineke/indent-blankline.nvim",
+        'lukas-reineke/indent-blankline.nvim',
         config = function()
             opts = {}
             -- Other blankline configuration here
-            require("ibl").setup(require("indent-rainbowline").make_opts(opts, {
+            require('ibl').setup(require('indent-rainbowline').make_opts(opts, {
                 -- How transparent should the rainbow colors be. 1 is completely opaque, 0 is invisible. 0.07 by default
                 color_transparency = 0.15,
                 -- The 24-bit colors to mix with the background. Specified in hex.
@@ -107,7 +109,7 @@ return require('packer').startup(function(use)
             }))
         end,
         requires = {
-            "TheGLander/indent-rainbowline.nvim",
+            'TheGLander/indent-rainbowline.nvim',
         },
     }   
     use('brenoprata10/nvim-highlight-colors')
