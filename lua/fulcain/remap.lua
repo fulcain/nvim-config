@@ -49,4 +49,4 @@ vim.keymap.set('', '<right>', '<nop>')
 
 
 -- JSDoc comment
-vim.keymap.set("n", "<leader>jd", "O/** */<ESC>hhi<ENTER><BACKSPACE><BACKSPACE><ESC>O<ESC>")  
+vim.keymap.set("n", "<leader>jd", "O/** */<ESC>hi")  
