@@ -68,6 +68,7 @@ return require('packer').startup(function(use)
             {'hrsh7th/nvim-cmp'},
             {'hrsh7th/cmp-nvim-lsp'},
             {'hrsh7th/cmp-path'},
+            {'hrsh7th/cmp-cmdline'},
             {'hrsh7th/cmp-nvim-lua'},
             {'hrsh7th/cmp-buffer'},
             {'saadparwaiz1/cmp_luasnip'},
@@ -149,6 +150,15 @@ return require('packer').startup(function(use)
     }
 
     use("dstein64/vim-startuptime")
+
+    use({
+        "folke/noice.nvim",
+        requires = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+            "MunifTanjim/nui.nvim"
+        }
+    })
 end)
 
 
