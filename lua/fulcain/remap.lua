@@ -50,6 +50,3 @@ vim.keymap.set('', '<right>', '<nop>')
 
 -- JSDoc comment
 vim.keymap.set("n", "<leader>jd", "O/** */<ESC>hi")  
-
--- Remove notice
-vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>")
