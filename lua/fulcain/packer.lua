@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
     -- Themes
     use 'navarasu/onedark.nvim'
 
+    use { "ellisonleao/gruvbox.nvim" }
     -- Treesitter
     use {
         'nvim-treesitter/nvim-treesitter',
