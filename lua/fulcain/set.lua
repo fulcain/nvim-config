@@ -41,8 +41,8 @@ vim.g.NERDTreeHijackNetrw = 0
 -- Persian language support
 vim.opt.termbidi = true
 
-vim.opt.spelllang = 'en_us'
-vim.opt.spell = true
+-- vim.opt.spelllang = 'en_us'
+-- vim.opt.spell = true
 
 -- Syntax highlight for html template literals
 vim.g.htl_all_templates = true
