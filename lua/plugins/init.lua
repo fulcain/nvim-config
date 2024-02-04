@@ -1,58 +1,55 @@
 return {
     -- Vim prac game
-    { 'ThePrimeagen/vim-be-good' },
+    'ThePrimeagen/vim-be-good',
 
     -- A plugin that tracks the changes to the file since the start of editing
-    -- (<leader>u)
-    { 'mbbill/undotree' },
+    'mbbill/undotree',
 
     -- Track git status (<leader>gs)
-    { 'tpope/vim-fugitive' },
+    'tpope/vim-fugitive',
 
     -- Change around things (ex: cs"' => change " to ' 
-    { 'tpope/vim-surround' },
+    'tpope/vim-surround',
 
     -- Prettier related
-    { 'prettier/vim-prettier',  build  = 'yarn install --frozen-lockfile --production' },
+    'prettier/vim-prettier',  build  = 'yarn install --frozen-lockfile --production',
 
     -- Web dev env
-    { 'alvan/vim-closetag' }, 
+    'alvan/vim-closetag',
 
-    { 'mattn/emmet-vim' },
-    -- { 'jiangmiao/auto-pairs' },
+    'mattn/emmet-vim',
 
     -- Template literal syntax highlight
-    { 'jonsmithers/vim-html-template-literals' },
+    'jonsmithers/vim-html-template-literals',
 
     -- js and ts for vim
-    { 'leafgarland/typescript-vim' },
-    { 'pangloss/vim-javascript' },
-    
+    'leafgarland/typescript-vim',
+    'pangloss/vim-javascript',
+
     -- Highlight matching tags
-    { 'gregsexton/MatchTag' },
+    'gregsexton/MatchTag',
 
     -- Snippets plugins
-    { 'axelvc/template-string.nvim' },
-    { 'garbas/vim-snipmate' },
-    { 'MarcWeber/vim-addon-mw-utils' },
-    { 'tomtom/tlib_vim' },
-    { 'honza/vim-snippets' },
+    'axelvc/template-string.nvim',
+    'garbas/vim-snipmate',
+    'MarcWeber/vim-addon-mw-utils',
+    'tomtom/tlib_vim',
+    'honza/vim-snippets',
 
     -- Comment plug
-    { 'tpope/vim-commentary' },
+    'tpope/vim-commentary',
 
     -- View project files (new project only :>)
-    { 'preservim/nerdtree' },
+    'preservim/nerdtree',
 
     -- better quick fix
-    {'kevinhwang91/nvim-bqf', ft = 'qf'},
+    'kevinhwang91/nvim-bqf', ft = 'qf',
 
-    -- Git blame
-    { 'f-person/git-blame.nvim' }, 
+    'dstein64/vim-startuptime',
 
-    { "dstein64/vim-startuptime" },
+    'neoclide/coc.nvim', branch = 'release',
 
-    { 'neoclide/coc.nvim', branch = 'release' },
-
+    -- ============ Disabled plugins
+    -- 'f-person/git-blame.nvim'  
+    -- 'jiangmiao/auto-pairs',
 }
-
