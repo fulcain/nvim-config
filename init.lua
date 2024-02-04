@@ -1,7 +1,4 @@
-require("fulcain")
-require("fulcain.remap")
-require("fulcain.set")
-
+-- Ensure Lazy is installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -17,4 +14,11 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+require("fulcain")
+require("fulcain.remap")
+require("fulcain.set")
+
 require('lazy').setup('plugins')
+-- TODO: Fix this later
+-- Theme
+vim.cmd.colorscheme("gruvbox")
