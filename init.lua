@@ -15,8 +15,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("fulcain")
-require("fulcain.remap")
-require("fulcain.set")
 
 require('lazy').setup('plugins')
 -- TODO: Fix this later
