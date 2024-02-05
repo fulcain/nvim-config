@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>n", vim.cmd.NERDTreeToggle)
-    
+
 -- Moves the selected line up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -50,3 +50,13 @@ vim.keymap.set('', '<right>', '<nop>')
 
 -- JSDoc comment
 vim.keymap.set("n", "<leader>jd", "O/** */<ESC>hi")  
+
+-- Code spell checker
+vim.keymap.set("x", "<leader>.", "<Plug>(coc-codeaction-selected)")
+vim.keymap.set("n", "<leader>.", "<Plug>(coc-codeaction-selected)")
+
+-- Fugitive
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+
+-- Undotree 
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
