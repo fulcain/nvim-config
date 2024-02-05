@@ -29,12 +29,13 @@ return {
     -- Highlight matching tags
     'gregsexton/MatchTag',
 
-    -- Snippets plugins
+    -- AUto change string to template after writing ${}
     'axelvc/template-string.nvim',
-    'garbas/vim-snipmate',
+
+    -- Snippets plugins
     'MarcWeber/vim-addon-mw-utils',
     'tomtom/tlib_vim',
-    'honza/vim-snippets',
+    'garbas/vim-snipmate',
 
     -- Comment plug
     'tpope/vim-commentary',
@@ -47,7 +48,7 @@ return {
 
     'dstein64/vim-startuptime',
 
-    'neoclide/coc.nvim', branch = 'release',
+    'neoclide/coc.nvim', branch = 'release'
 
     -- ============ Disabled plugins
     -- 'f-person/git-blame.nvim'  
