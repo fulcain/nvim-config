@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>n", vim.cmd.NERDTreeToggle)
 
@@ -46,7 +45,6 @@ vim.keymap.set('', '<up>', '<nop>')
 vim.keymap.set('', '<down>', '<nop>')
 vim.keymap.set('', '<left>', '<nop>')
 vim.keymap.set('', '<right>', '<nop>')
-
 
 -- JSDoc comment
 vim.keymap.set("n", "<leader>jd", "O/** */<ESC>hi")  

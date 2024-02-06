@@ -25,8 +25,6 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "85"
-
 vim.g.mapleader = " "
 
 vim.opt.clipboard = "unnamed"
@@ -40,14 +38,12 @@ vim.g.NERDTreeHijackNetrw = 0
 
 -- Persian language support
 vim.opt.termbidi = true
-
--- vim.opt.spelllang = 'en_us'
--- vim.opt.spell = true
-
+--
 -- Syntax highlight for html template literals
 vim.g.htl_all_templates = true
 
 -- Change cursor in all modes to block
 vim.opt.guicursor = "n-v-c-i:block"
 
-vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf javascript.jsx')
+-- Set EJS as html
+vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf html')
