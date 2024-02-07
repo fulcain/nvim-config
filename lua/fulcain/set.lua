@@ -47,3 +47,12 @@ vim.opt.guicursor = "n-v-c-i:block"
 
 -- Set EJS as html
 vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf html')
+
+-- Disable Tree-sitter parsing for .jsx and .tsx files
+vim.cmd[[
+augroup DisableTreeSitter
+  autocmd!
+  autocmd BufEnter *.jsx set filetype=javascript
+  autocmd BufEnter *.tsx set filetype=typescript
+augroup END
+]]
