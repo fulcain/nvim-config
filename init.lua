@@ -17,6 +17,5 @@ vim.opt.rtp:prepend(lazypath)
 require("fulcain")
 
 require('lazy').setup('plugins')
--- TODO: Fix this later
 -- Theme
 vim.cmd.colorscheme("gruvbox")
