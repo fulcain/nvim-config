@@ -1,4 +1,4 @@
-return{
+return {
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
         'nvim-treesitter/nvim-treesitter-textobjects',
@@ -8,16 +8,6 @@ return{
         local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 
         ts_update()
-
-        highlight = {
-            enable = true,
-            disable = {},
-        },
-
-        indent = {
-            enable = true,
-            disable = {},
-        },       
 
         require'nvim-treesitter.configs'.setup {
             -- A list of parser names, or "all" (the five listed parsers should always be installed)
@@ -40,9 +30,13 @@ return{
             -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
             auto_install = true,
 
+            indent = {
+                enable = true,
+                disable = {},
+            },       
             highlight = {
                 enable = true,
-
+                disable = {},
 
                 -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
                 -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
