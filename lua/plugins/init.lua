@@ -12,7 +12,10 @@ return {
     'tpope/vim-surround',
 
     -- Prettier related
-    'prettier/vim-prettier',  build  = 'yarn install --frozen-lockfile --production',
+    {
+        'prettier/vim-prettier',  
+        build  = 'yarn install --frozen-lockfile --production',
+    },        
 
     -- Web dev env
     'alvan/vim-closetag',
@@ -32,7 +35,6 @@ return {
     -- AUto change string to template after writing ${}
     'axelvc/template-string.nvim',
 
-
     -- Comment plug
     'tpope/vim-commentary',
 
@@ -40,11 +42,17 @@ return {
     'preservim/nerdtree',
 
     -- better quick fix
-    'kevinhwang91/nvim-bqf', ft = 'qf',
+    {
+        'kevinhwang91/nvim-bqf',
+        ft = 'qf',
+    },
 
     'dstein64/vim-startuptime',
 
-    'neoclide/coc.nvim', branch = 'release'
+    {
+        'neoclide/coc.nvim',
+        branch = 'release'
+    }
 
     -- ============ Disabled plugins
     -- 'f-person/git-blame.nvim'  

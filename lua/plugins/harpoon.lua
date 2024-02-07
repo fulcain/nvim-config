@@ -6,7 +6,6 @@ return {
         'nvim-telescope/telescope.nvim',
         'nvim-lua/plenary.nvim'
     },
-
     config = function()
         local harpoon = require("harpoon")
 

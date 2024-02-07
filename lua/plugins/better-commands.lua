@@ -24,14 +24,6 @@ return {
                     bold = true,
                     virtual_text = "",
                 },
-                {
-                    name = "!",
-                    fg = "#f44747",
-                    bg = "",
-                    bold = true,
-                    virtual_text = "",
-                }
-
             }
         })
     end

@@ -1,7 +1,5 @@
 return {
-    -- Makes .env file values not readable
     'laytan/cloak.nvim' ,
-
     config = function()
         require('cloak').setup({
             enabled = true,
