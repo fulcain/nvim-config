@@ -32,10 +32,6 @@ return {
     -- AUto change string to template after writing ${}
     'axelvc/template-string.nvim',
 
-    -- Snippets plugins
-    'MarcWeber/vim-addon-mw-utils',
-    'tomtom/tlib_vim',
-    'garbas/vim-snipmate',
 
     -- Comment plug
     'tpope/vim-commentary',
