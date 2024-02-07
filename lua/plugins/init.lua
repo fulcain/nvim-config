@@ -56,7 +56,8 @@ return {
 
     'windwp/nvim-ts-autotag',
 
+    'jiangmiao/auto-pairs',
+
     -- ============ Disabled plugins
     -- 'f-person/git-blame.nvim'  
-    -- 'jiangmiao/auto-pairs',
 }
