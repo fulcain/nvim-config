@@ -1,11 +1,23 @@
 return{
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
-        'nvim-treesitter/nvim-treesitter-textobjects'
+        'nvim-treesitter/nvim-treesitter-textobjects',
+        'windwp/nvim-ts-autotag',
     },
     config = function()
         local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+
         ts_update()
+
+        highlight = {
+            enable = true,
+            disable = {},
+        },
+
+        indent = {
+            enable = true,
+            disable = {},
+        },       
 
         require'nvim-treesitter.configs'.setup {
             -- A list of parser names, or "all" (the five listed parsers should always be installed)
@@ -15,8 +27,12 @@ return{
                 "vim", 
                 "vimdoc", 
                 "query", 
+                "tsx",
+                "json"
             },
-
+            autotag = {
+                enable = true,
+            },
             -- Install parsers synchronously (only applied to `ensure_installed`)
             sync_install = false,
 

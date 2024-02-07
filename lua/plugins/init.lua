@@ -52,7 +52,9 @@ return {
     {
         'neoclide/coc.nvim',
         branch = 'release'
-    }
+    },
+
+    'windwp/nvim-ts-autotag',
 
     -- ============ Disabled plugins
     -- 'f-person/git-blame.nvim'  
