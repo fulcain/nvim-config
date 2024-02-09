@@ -7,7 +7,7 @@ if not vim.loop.fs_stat(lazypath) then
         "clone",
         "--filter=blob:none",
         "https://github.com/folke/lazy.nvim.git",
-        "--branch=stable", -- latest stable release
+        "--branch=stable", 
         lazypath,
     })
 end
@@ -15,7 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("fulcain")
-
 require('lazy').setup('plugins')
+
 -- Theme
 vim.cmd.colorscheme("gruvbox")
