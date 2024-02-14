@@ -18,4 +18,4 @@ require("fulcain")
 require('lazy').setup('plugins')
 
 -- Theme
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("tokyonight-night")
