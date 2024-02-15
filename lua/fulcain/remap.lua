@@ -61,6 +61,8 @@ keymap("n", "<leader>gs", vim.cmd.Git);
 
 -- Undotree 
 keymap('n', '<leader>u', vim.cmd.UndotreeToggle)
+
+-- treesitter context
 keymap("n", "<leader>gc", function()
   require("treesitter-context").go_to_context(vim.v.count1)
 end, { silent = true })
