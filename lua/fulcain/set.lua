@@ -43,7 +43,7 @@ vim.opt.termbidi = true
 vim.g.htl_all_templates = true
 
 -- Change cursor in all modes to block
-vim.opt.guicursor = "n-v-c-i:block"
+-- vim.opt.guicursor = "n-v-c-i:block"
 
 -- Set EJS as html
 vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf html')
