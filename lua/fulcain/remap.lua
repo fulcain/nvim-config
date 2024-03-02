@@ -2,7 +2,6 @@ local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
 keymap("n", "<leader>pv", vim.cmd.Ex)
-keymap("n", "<leader>n", vim.cmd.NERDTreeToggle)
 
 -- Moves the selected line up and down
 keymap("v", "J", ":m '>+1<CR>gv=gv")

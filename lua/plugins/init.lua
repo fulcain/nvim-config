@@ -38,9 +38,6 @@ return {
     -- Comment plug
     'tpope/vim-commentary',
 
-    -- View project files (new project only :>)
-    'preservim/nerdtree',
-
     -- better quick fix
     {
         'kevinhwang91/nvim-bqf',
