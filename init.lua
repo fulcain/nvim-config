@@ -18,5 +18,5 @@ require("fulcain")
 require('lazy').setup('plugins')
 
 -- Theme
-vim.cmd.colorscheme("tokyonight-storm")
+vim.cmd.colorscheme("tokyonight-moon")
 
