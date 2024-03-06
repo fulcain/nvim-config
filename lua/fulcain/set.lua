@@ -27,12 +27,11 @@ vim.opt.updatetime = 50
 
 vim.g.mapleader = " "
 
-vim.opt.clipboard = "unnamed"
+vim.opt.clipboard = "unnamedplus"
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
-
 -- nerdtree
 vim.g.NERDTreeHijackNetrw = 0
 
