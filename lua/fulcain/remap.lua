@@ -65,3 +65,7 @@ keymap('n', '<leader>u', vim.cmd.UndotreeToggle)
 keymap("n", "<leader>gc", function()
   require("treesitter-context").go_to_context(vim.v.count1)
 end, { silent = true })
+
+-- Shift or tab the selected thing
+keymap("v", "<TAB>", ">gv")
+keymap("v", "<S-TAB>", "<gv")
