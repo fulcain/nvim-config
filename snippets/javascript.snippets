@@ -22,7 +22,7 @@ snippet try "try { ... } catch(e) { ... }"
 		throw ${1:err}
 	}
 
-# For in loop
+# For in loopp
 snippet cforin
 	for (let ${1:prop} in ${2:object}) {
 		${0:$2[$1]}
@@ -49,9 +49,7 @@ snippet qs
 
 # Query selector all
 snippet qsa
-	${1:document}.querySelectorAll('${2:CSS selector}', ()=>{
-	 	$0
-	})
+	${1:document}.querySelectorAll('${2:CSS selector}');
 # Debugging
 snippet cl "console.log"
 	console.log(${0});

@@ -22,7 +22,7 @@ snippet try "try { ... } catch(e) { ... }"
 		throw ${1:err}
 	}
 
-# For in loop
+# For in loopp
 snippet cforin
 	for (let ${1:prop} in ${2:object}) {
 		${0:$2[$1]}
@@ -45,19 +45,25 @@ snippet @ret
 # DOM selectors
 # Query selector
 snippet qs
-	${1:document}.querySelector('${2:CSS selector}',() =>{
-		$0
-	})
+	${1:document}.querySelector('${2:CSS selector}');
 
 # Query selector all
 snippet qsa
-	${1:document}.querySelectorAll('${2:CSS selector}', ()=>{
-	 	$0
-	})
+	${1:document}.querySelectorAll('${2:CSS selector}');
 # Debugging
 snippet cl "console.log"
 	console.log(${0});
 
+snippet ci "console.info"
+	console.info(${0});
+
+snippet ct "console.trace"
+	console.trace(${0:label});
+
+snippet cprof "console.profile"
+	console.profile("${1:label}");
+	${0:${VISUAL}}
+	console.profileEnd();
 # Misc
 # setTimeout function
 snippet setTimeout
