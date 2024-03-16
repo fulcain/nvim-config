@@ -89,7 +89,7 @@ Full Docs: [https://github.com/iamcco/coc-spell-checker](https://github.com/iamc
 To repair:
 
 ```bash
-:call coc#util#install()
+call coc#util#install()
 ```
 
 # Mason
