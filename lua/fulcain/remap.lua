@@ -69,3 +69,9 @@ end, { silent = true })
 -- Shift or tab the selected thing
 keymap("v", "<TAB>", ">gv")
 keymap("v", "<S-TAB>", "<gv")
+
+-- Navigate vim panes better
+keymap("n", "<c-k>", ":wincmd k<CR>")
+keymap("n", "<c-j>", ":wincmd j<CR>")
+keymap("n", "<c-h>", ":wincmd h<CR>")
+keymap("n", "<c-l>", ":wincmd l<CR>")
