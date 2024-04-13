@@ -9,5 +9,8 @@ return {
 	},
 	config = function()
 		vim.keymap.set("n", "<leader>n", vim.cmd.NERDTreeToggle)
+
+		vim.g.NERDTreeFileLines = 1
+		vim.g.NERDTreeHijackNetrw = 0
 	end
 }

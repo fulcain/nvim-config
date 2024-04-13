@@ -32,8 +32,6 @@ vim.opt.clipboard = "unnamedplus"
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
--- nerdtree
-vim.g.NERDTreeHijackNetrw = 0
 
 -- Persian language support
 vim.opt.termbidi = true
