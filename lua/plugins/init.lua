@@ -55,6 +55,7 @@ return {
 
     'jiangmiao/auto-pairs',
 
+	'mboughaba/i3config.vim',
     -- ============ Disabled plugins
     -- 'f-person/git-blame.nvim'  
 }
