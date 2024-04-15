@@ -7,14 +7,18 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
 
 vim.opt.smartindent = true
+vim.opt.breakindent = true
 
 vim.opt.wrap = true 
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
 
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
@@ -56,3 +60,12 @@ augroup DisableTreeSitter
   autocmd BufEnter *.tsx set filetype=typescript
 augroup END
 ]]
+
+-- highlight while yanking
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking text",
+	group = vim.api.nvim_create_augroup("custom-hightlight-yank", { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end
+})

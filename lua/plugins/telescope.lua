@@ -1,7 +1,7 @@
 return {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.5',
-    dependencies = { 
+    dependencies = {
         'nvim-lua/plenary.nvim',
         'nvim-tree/nvim-web-devicons',
     },
@@ -24,5 +24,7 @@ return {
 
             builtin.grep_string({ search = word })
         end)
+
+		vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
     end
 }

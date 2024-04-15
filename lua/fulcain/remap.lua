@@ -15,6 +15,8 @@ keymap("n", "n", "nzzzv")
 keymap("n", "N", "Nzzzv")
 keymap("x", "<leader>p", [["_dP]])
 
+keymap("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 -- yank into clipboard
 keymap({"n", "v"}, "<leader>y", [["+y]])
 keymap("n", "<leader>Y", [["+Y]])

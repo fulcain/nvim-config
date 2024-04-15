@@ -13,9 +13,9 @@ return {
 
     -- Prettier related
     {
-        'prettier/vim-prettier',  
+        'prettier/vim-prettier',
         build  = 'yarn install --frozen-lockfile --production',
-    },        
+    },
 
     -- Web dev env
     'alvan/vim-closetag',
