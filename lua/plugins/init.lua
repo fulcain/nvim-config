@@ -1,59 +1,71 @@
 return {
-    -- Vim prac game
-    'ThePrimeagen/vim-be-good',
+	-- Vim prac game
+	'ThePrimeagen/vim-be-good',
 
-    -- A plugin that tracks the changes to the file since the start of editing
-    'mbbill/undotree',
+	-- A plugin that tracks the changes to the file since the start of editing
+	'mbbill/undotree',
 
-    -- Change around things (ex: cs"' => change " to ' 
-    'tpope/vim-surround',
+	-- Change around things 
+	--[[
+		cs"' => change " to ' 
+		cst" => change total to " (fll circle)
+		ds" => delete the " around
+		ysiw] => add a [] around word
+	]]--
+	'tpope/vim-surround',
 
-    -- Prettier related
-    {
-        'prettier/vim-prettier',
-        build  = 'yarn install --frozen-lockfile --production',
-    },
+	-- Prettier related
+	{
+		'prettier/vim-prettier',
+		build  = 'yarn install --frozen-lockfile --production',
+	},
 
-    -- Web dev env
-    'alvan/vim-closetag',
+	-- Web dev env
+	'alvan/vim-closetag',
 
-    'mattn/emmet-vim',
+	'mattn/emmet-vim',
 
-    -- Template literal syntax highlight
-    'jonsmithers/vim-html-template-literals',
+	-- Template literal syntax highlight
+	'jonsmithers/vim-html-template-literals',
 
-    -- js and ts for vim
-    'leafgarland/typescript-vim',
-    'pangloss/vim-javascript',
+	-- js and ts for vim
+	'leafgarland/typescript-vim',
+	'pangloss/vim-javascript',
 
-    -- Highlight matching tags
-    'gregsexton/MatchTag',
+	-- Highlight matching tags
+	'gregsexton/MatchTag',
 
-    -- AUto change string to template after writing ${}
-    'axelvc/template-string.nvim',
+	-- Auto change string to template after writing ${}
+	'axelvc/template-string.nvim',
 
-    -- Comment plug
-    'tpope/vim-commentary',
+	-- Comment plug
+	'tpope/vim-commentary',
 
-    -- better quick fix
-    {
-        'kevinhwang91/nvim-bqf',
-        ft = 'qf',
-    },
+	-- better quick fix
+	{
+		'kevinhwang91/nvim-bqf',
+		ft = 'qf',
+	},
 
-    'dstein64/vim-startuptime',
+	'dstein64/vim-startuptime',
 
-    {
-        'neoclide/coc.nvim',
-        branch = 'release'
-    },
+	{
+		'neoclide/coc.nvim',
+		branch = 'release'
+	},
 
-    'windwp/nvim-ts-autotag',
+	'windwp/nvim-ts-autotag',
 
-    'jiangmiao/auto-pairs',
+	'jiangmiao/auto-pairs',
 
 	'mboughaba/i3config.vim',
 
-    -- ============ Disabled plugins
-    -- 'f-person/git-blame.nvim'  
+	'nanotee/luv-vimdocs',
+	'milisims/nvim-luaref',
+
+	-- ============ Disabled plugins
+	{
+		'f-person/git-blame.nvim',
+		enabled = false
+	}
 }
