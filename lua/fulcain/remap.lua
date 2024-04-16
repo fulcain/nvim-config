@@ -44,9 +44,14 @@ keymap("n", "<leader>j", "<cmd>lprev<CR>zz")
 keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Save and source file
-keymap("n", "<leader><leader>", function()
+keymap("n", "<leader><leader>s", function()
     vim.cmd("w")
     vim.cmd("so")
+end)
+
+-- Saves a file
+keymap("n", "<leader><leader>", function()
+    vim.cmd("w")
 end)
 
 -- Select whole file
