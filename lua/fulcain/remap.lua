@@ -1,8 +1,11 @@
+local installMasonPlugins = require("fulcain.mason-plugins");
 local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
 -- keymap("n", "<leader>pv", vim.cmd.Ex)
 keymap("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+installMasonPlugins()
 
 -- Moves the selected line up and down
 keymap("v", "J", ":m '>+1<CR>gv=gv")
