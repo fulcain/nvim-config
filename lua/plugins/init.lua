@@ -5,9 +5,6 @@ return {
     -- A plugin that tracks the changes to the file since the start of editing
     'mbbill/undotree',
 
-    -- Track git status (<leader>gs)
-    'tpope/vim-fugitive',
-
     -- Change around things (ex: cs"' => change " to ' 
     'tpope/vim-surround',
 
@@ -56,6 +53,7 @@ return {
     'jiangmiao/auto-pairs',
 
 	'mboughaba/i3config.vim',
+
     -- ============ Disabled plugins
     -- 'f-person/git-blame.nvim'  
 }
