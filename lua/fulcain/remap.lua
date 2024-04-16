@@ -2,10 +2,14 @@ local installMasonPlugins = require("fulcain.mason-plugins");
 local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
+
 -- keymap("n", "<leader>pv", vim.cmd.Ex)
 keymap("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 installMasonPlugins()
+
+-- run test in the current file
+keymap("n", "<leader>t", "<Plug>PlenaryTestFile")
 
 -- Moves the selected line up and down
 keymap("v", "J", ":m '>+1<CR>gv=gv")
@@ -48,13 +52,13 @@ keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Save and source file
 keymap("n", "<leader><leader>s", function()
-    vim.cmd("w")
-    vim.cmd("so")
+	vim.cmd("w")
+	vim.cmd("so")
 end)
 
 -- Saves a file
 keymap("n", "<leader><leader>", function()
-    vim.cmd("w")
+	vim.cmd("w")
 end)
 
 -- Select whole file
@@ -77,7 +81,7 @@ keymap('n', '<leader>u', vim.cmd.UndotreeToggle)
 
 -- treesitter context
 keymap("n", "<leader>gc", function()
-  require("treesitter-context").go_to_context(vim.v.count1)
+	require("treesitter-context").go_to_context(vim.v.count1)
 end, { silent = true })
 
 -- Shift or tab the selected thing
