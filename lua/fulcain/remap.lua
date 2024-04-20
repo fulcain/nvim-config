@@ -28,19 +28,19 @@ keymap("n", "N", "Nzzzv")
 keymap("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- yank into clipboard
-keymap({"n", "v"}, "<leader>y", [["+y]])
+keymap({ "n", "v" }, "<leader>y", [["+y]])
 keymap("n", "<leader>Y", [["+Y]])
 
 -- Delete the selected thing without adding it to clipboard
-keymap({"n", "v"}, "<leader>d", [["_d]])
+keymap({ "n", "v" }, "<leader>d", [["_d]])
 
 -- For visual block mode
 keymap("i", "<C-c>", "<Esc>")
 
 keymap("n", "Q", "<nop>")
 
--- run prettier
-keymap("n", "<leader>f", "<cmd>Prettier<cr>")
+-- run formatter
+keymap("n", "<leader>f", vim.lsp.buf.format, {})
 
 keymap("n", "<C-k>", "<cmd>cnext<CR>zz")
 keymap("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -62,7 +62,7 @@ keymap("n", "<leader><leader>", function()
 end)
 
 -- Select whole file
-keymap("n" , "<C-a>", "ggVG")
+keymap("n", "<C-a>", "ggVG")
 
 keymap("n", "<leader>sf", "<cmd>set termbidi<cr>")
 
@@ -72,11 +72,11 @@ keymap('', '<down>', '<nop>')
 keymap('', '<left>', '<nop>')
 keymap('', '<right>', '<nop>')
 
--- Code spell checker 
+-- Code spell checker
 keymap("x", "<leader>.", "<Plug>(coc-codeaction-selected)")
 keymap("n", "<leader>.", "<Plug>(coc-codeaction-selected)")
 
--- Undotree 
+-- Undotree
 keymap('n', '<leader>u', vim.cmd.UndotreeToggle)
 
 -- treesitter context
