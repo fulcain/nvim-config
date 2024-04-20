@@ -1,7 +1,9 @@
 This Markdown file details all the packages used in my configuration that need to be installed outside of Vim, along with some configuration details.
+
 - **Note**: For the command line I deleted the `:` so you can easily copy and paste the things inside the code block.
 
 The package managers I use are as follows:
+
 - `brew` for macOS
 - `apt` and `apt-get` for Linux (Ubuntu)
 - `choco` for Windows
@@ -99,6 +101,7 @@ The LSP and linters installed using Mason in Neovim itself. You can type
 ```bash
 Mason
 ```
+
 To open Mason, then use `/` to search for the following packages
 
 - `css-lsp`
