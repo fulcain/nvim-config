@@ -1,4 +1,4 @@
-local installMasonPlugins = require("fulcain.mason-plugins");
+local installMasonPlugins = require("fulcain.mason-plugins")
 local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
@@ -67,17 +67,17 @@ keymap("n", "<C-a>", "ggVG")
 keymap("n", "<leader>sf", "<cmd>set termbidi<cr>")
 
 -- Shameful section
-keymap('', '<up>', '<nop>')
-keymap('', '<down>', '<nop>')
-keymap('', '<left>', '<nop>')
-keymap('', '<right>', '<nop>')
+keymap("", "<up>", "<nop>")
+keymap("", "<down>", "<nop>")
+keymap("", "<left>", "<nop>")
+keymap("", "<right>", "<nop>")
 
 -- Code spell checker
 keymap("x", "<leader>.", "<Plug>(coc-codeaction-selected)")
 keymap("n", "<leader>.", "<Plug>(coc-codeaction-selected)")
 
 -- Undotree
-keymap('n', '<leader>u', vim.cmd.UndotreeToggle)
+keymap("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- treesitter context
 keymap("n", "<leader>gc", function()
@@ -93,3 +93,9 @@ keymap("n", "<c-k>", ":wincmd k<CR>")
 keymap("n", "<c-j>", ":wincmd j<CR>")
 keymap("n", "<c-h>", ":wincmd h<CR>")
 keymap("n", "<c-l>", ":wincmd l<CR>")
+
+-- Inc and dec numbers
+keymap("n", "<leader>+", "<C-a>", { desc = "Increament number" })
+keymap("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
+
+keymap("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })

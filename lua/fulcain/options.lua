@@ -1,50 +1,61 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
-vim.opt.autoread = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
+local opt = vim.opt
 
-vim.opt.smartindent = true
-vim.opt.breakindent = true
+-- Numbe related
+opt.nu = true
+opt.relativenumber = true
 
-vim.opt.wrap = true
+opt.autoread = true
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+-- Tab related
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = false
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undofile = true
+opt.smartindent = true
+opt.breakindent = true
+opt.autoindent = true
 
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+opt.cursorline = true
 
-vim.opt.termguicolors = true
+opt.wrap = true
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+opt.ignorecase = true
+opt.smartcase = true
 
-vim.opt.updatetime = 50
+opt.backspace = "indent,eol,start"
+
+opt.swapfile = false
+opt.backup = false
+opt.undofile = true
+
+opt.hlsearch = true
+opt.incsearch = true
+
+opt.termguicolors = true
+
+opt.scrolloff = 8
+opt.signcolumn = "yes"
+opt.isfname:append("@-@")
+
+opt.updatetime = 50
 
 vim.g.mapleader = " "
 
-vim.opt.clipboard = "unnamedplus"
+opt.clipboard = "unnamedplus"
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
 
 -- Persian language support
-vim.opt.termbidi = true
+opt.termbidi = true
 --
 -- Syntax highlight for html template literals
 vim.g.htl_all_templates = true
 
 -- Change cursor in all modes to block
--- vim.opt.guicursor = "n-v-c-i:block"
+-- opt.guicursor = "n-v-c-i:block"
 
 -- Set EJS as html
 vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf html')

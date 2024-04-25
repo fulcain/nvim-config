@@ -1,2 +1,2 @@
-require("fulcain.remap")
-require("fulcain.set")
+require("fulcain.keymaps")
+require("fulcain.options")
