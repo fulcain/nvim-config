@@ -3,6 +3,7 @@ return {
 	branch = "0.1.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
+		"folke/todo-comments.nvim",
 		"nvim-telescope/telescope-fzf-native.nvim",
 	},
 	config = function()
@@ -15,26 +16,30 @@ return {
 			},
 		})
 
+		local keymap = vim.keymap.set
+
 		-- keymaps
-		vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
-		vim.keymap.set("n", "<leader>ps", builtin.live_grep)
+		keymap("n", "<leader>pf", builtin.find_files, {})
+		keymap("n", "<leader>ps", builtin.live_grep)
 
-		vim.keymap.set("n", "<leader>pr", builtin.oldfiles, { desc = "Opens recently opened files in telescope" })
+		keymap("n", "<leader>pr", builtin.oldfiles, { desc = "Opens recently opened files in telescope" })
 
-		vim.keymap.set("n", "<C-p>", "builtin.git_files", {})
+		keymap("n", "<leader>pt", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
 
-		vim.keymap.set("n", "<leader>pws", function()
+		keymap("n", "<C-p>", "builtin.git_files", {})
+
+		keymap("n", "<leader>pws", function()
 			local word = vim.fn.expand("<cword>")
 
 			builtin.grep_string({ search = word })
 		end)
 
-		vim.keymap.set("n", "<leader>pWs", function()
+		keymap("n", "<leader>pWs", function()
 			local word = vim.fn.expand("<cWORD>")
 
 			builtin.grep_string({ search = word })
 		end)
 
-		vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
+		keymap("n", "<leader>vh", builtin.help_tags, {})
 	end,
 }

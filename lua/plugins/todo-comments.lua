@@ -5,14 +5,13 @@ return {
 	config = function()
 		local todo_comments = require("todo-comments")
 
-		-- set keymaps
-		local keymap = vim.keymap -- for conciseness
+		local keymap = vim.keymap.set
 
-		keymap.set("n", "]t", function()
+		keymap("n", "<leader>]t", function()
 			todo_comments.jump_next()
 		end, { desc = "Next todo comment" })
 
-		keymap.set("n", "[t", function()
+		keymap("n", "<leader>[t", function()
 			todo_comments.jump_prev()
 		end, { desc = "Previous todo comment" })
 

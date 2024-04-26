@@ -5,15 +5,6 @@ return {
 	-- A plugin that tracks the changes to the file since the start of editing
 	'mbbill/undotree',
 
-	-- Change around things 
-	--[[
-		cs"' => change " to ' 
-		cst" => change total to " (fll circle)
-		ds" => delete the " around
-		ysiw] => add a [] around word
-	]]--
-	'tpope/vim-surround',
-
 	-- Prettier related
 	{
 		'prettier/vim-prettier',
@@ -38,9 +29,6 @@ return {
 	-- Auto change string to template after writing ${}
 	'axelvc/template-string.nvim',
 
-	-- Comment plug
-	'tpope/vim-commentary',
-
 	-- better quick fix
 	{
 		'kevinhwang91/nvim-bqf',
@@ -55,8 +43,6 @@ return {
 	},
 
 	'windwp/nvim-ts-autotag',
-
-	'jiangmiao/auto-pairs',
 
 	'mboughaba/i3config.vim',
 

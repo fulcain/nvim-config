@@ -1,12 +1,9 @@
-local installMasonPlugins = require("fulcain.mason-plugins")
 local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
 
 -- keymap("n", "<leader>pv", vim.cmd.Ex)
 keymap("n", "<leader>pv", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-
-installMasonPlugins()
 
 -- run test in the current file
 keymap("n", "<leader>t", "<Plug>PlenaryTestFile")
@@ -38,9 +35,6 @@ keymap({ "n", "v" }, "<leader>d", [["_d]])
 keymap("i", "<C-c>", "<Esc>")
 
 keymap("n", "Q", "<nop>")
-
--- run formatter
-keymap("n", "<leader>f", vim.lsp.buf.format, {})
 
 keymap("n", "<C-k>", "<cmd>cnext<CR>zz")
 keymap("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -79,11 +73,6 @@ keymap("n", "<leader>.", "<Plug>(coc-codeaction-selected)")
 -- Undotree
 keymap("n", "<leader>u", vim.cmd.UndotreeToggle)
 
--- treesitter context
-keymap("n", "<leader>gc", function()
-	require("treesitter-context").go_to_context(vim.v.count1)
-end, { silent = true })
-
 -- Shift or tab the selected thing
 keymap("v", "<TAB>", ">gv")
 keymap("v", "<S-TAB>", "<gv")
@@ -99,3 +88,9 @@ keymap("n", "<leader>+", "<C-a>", { desc = "Increament number" })
 keymap("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 
 keymap("i", "jk", "<Esc>", { desc = "Exit insert mode with jk" })
+
+-- Save session on vim close
+keymap("n", "ZZ", function()
+	vim.cmd("SessionSave")
+	vim.cmd("q")
+end)
