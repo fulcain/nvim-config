@@ -10,7 +10,6 @@ return {
                 'javascriptreact',
                 'vue',
                 'svelte',
-                'python'
             },
             jsx_brackets = true, -- must add brackets to JSX attributes
             remove_template_string = false, -- remove backticks when there are no template strings

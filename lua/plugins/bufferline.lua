@@ -7,5 +7,5 @@ return {
 			separator_style = "slant",
 		},
 	},
-	enabled = false
+	enabled = false,
 }
