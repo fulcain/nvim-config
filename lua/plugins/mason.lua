@@ -28,7 +28,7 @@ return {
 				"html",
 				"cssls",
 				"lua_ls",
-				"intelephense",
+				"phpactor",
 				"tailwindcss",
 				"tsserver",
 			},
@@ -38,6 +38,7 @@ return {
 				"prettier",
 				"stylua",
 				"eslint_d",
+				"php-cs-fixer",
 			},
 		})
 	end,

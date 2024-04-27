@@ -18,7 +18,7 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-				php = { "prettier" },
+				php = { "php-cs-fixer" },
 			},
 			-- format_on_save = {
 			-- 	lsp_fallback = true,
