@@ -7,12 +7,12 @@ return {
 
 		local colors = {
 			blue = "#65D1FF",
-			green = "#3EFFDC",
-			violet = "#FF61EF",
+			green = "#449dab",
+			violet = "#bb9af7",
 			yellow = "#FFDA7B",
 			red = "#FF4A4A",
 			fg = "#c3ccdc",
-			bg = "#112638",
+			bg = "#16161e",
 			inactive_bg = "#2c3043",
 		}
 
