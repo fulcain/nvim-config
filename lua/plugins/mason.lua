@@ -28,9 +28,7 @@ return {
 				"html",
 				"cssls",
 				"lua_ls",
-				"phpactor",
 				"tailwindcss",
-				"tsserver",
 			},
 		})
 		mason_tool_installer.setup({
@@ -38,7 +36,6 @@ return {
 				"prettier",
 				"stylua",
 				"eslint_d",
-				"php-cs-fixer",
 			},
 		})
 	end,
