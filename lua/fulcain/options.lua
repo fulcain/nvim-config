@@ -65,15 +65,6 @@ vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf html')
 -- Enable Syntax highlight for .conf / .ini
 vim.api.nvim_command('autocmd BufRead,BufNewFile logging.conf setf dosini')
 
--- Disable Tree-sitter parsing for .jsx and .tsx files
-vim.cmd[[
-augroup DisableTreeSitter
-  autocmd!
-  autocmd BufEnter *.jsx set filetype=javascript
-  autocmd BufEnter *.tsx set filetype=typescript
-augroup END
-]]
-
 -- highlight while yanking
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking text",
