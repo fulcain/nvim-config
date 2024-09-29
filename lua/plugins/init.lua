@@ -5,11 +5,11 @@ return {
 	-- A plugin that tracks the changes to the file since the start of editing
 	'mbbill/undotree',
 
-	-- Prettier related
-	{
-		'prettier/vim-prettier',
-		build  = 'yarn install --frozen-lockfile --production',
-	},
+	-- -- Prettier related
+	-- {
+	-- 	'prettier/vim-prettier',
+	-- 	build  = 'yarn install --frozen-lockfile --production',
+	-- },
 
 	-- Web dev env
 	'alvan/vim-closetag',
@@ -33,6 +33,7 @@ return {
 	{
 		'kevinhwang91/nvim-bqf',
 		ft = 'qf',
+		enabled = false
 	},
 
 	'dstein64/vim-startuptime',
