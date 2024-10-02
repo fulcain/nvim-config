@@ -42,7 +42,7 @@ return {
 				additional_vim_regex_highlighting = false,
 			},
 		})
-	end,
 
-	require("nvim-ts-autotag").setup()
+		require("nvim-ts-autotag").setup()
+	end,
 }
