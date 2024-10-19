@@ -18,7 +18,7 @@ return {
 
 		local keymap = vim.keymap.set
 
-		vim.api.nvim_create_autocmd("LspAttach", {
+		vim.api.nvim_create_autocmd("LspAttach",{
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
 				-- Buffer local mappings.
@@ -30,10 +30,10 @@ return {
 				keymap("n", "<leader>gr", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
 				opts.desc = "Go to declaration"
-				keymap("n", "<leader>gd", vim.lsp.buf.declaration, opts) -- go to declaration
+				keymap("n", "<leader>gD", vim.lsp.buf.declaration, opts) -- go to declaration
 
 				opts.desc = "Show LSP definitions"
-				keymap("n", "<leader>gD", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
+				keymap("n", "<leader>gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
 
 				opts.desc = "Show LSP implementations"
 				keymap("n", "<leader>gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations

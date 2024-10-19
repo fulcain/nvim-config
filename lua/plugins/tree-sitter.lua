@@ -7,6 +7,8 @@ return {
 	build = ":TSUpdate",
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
+		require("nvim-ts-autotag").setup()
+
 		require("nvim-treesitter.configs").setup({
 			ignore_install = {},
 			modules = {},
@@ -29,9 +31,6 @@ return {
 				"query",
 				"json",
 			},
-			autotag = {
-				enable = true,
-			},
 			sync_install = false,
 			auto_install = true,
 			indent = {
@@ -42,7 +41,5 @@ return {
 				additional_vim_regex_highlighting = false,
 			},
 		})
-
-		require("nvim-ts-autotag").setup()
 	end,
 }
