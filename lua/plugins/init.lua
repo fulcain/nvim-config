@@ -1,9 +1,9 @@
 return {
 	-- Vim prac game
-	'ThePrimeagen/vim-be-good',
+	"ThePrimeagen/vim-be-good",
 
 	-- A plugin that tracks the changes to the file since the start of editing
-	'mbbill/undotree',
+	"mbbill/undotree",
 
 	-- -- Prettier related
 	-- {
@@ -12,47 +12,46 @@ return {
 	-- },
 
 	-- Web dev env
-	'alvan/vim-closetag',
+	"alvan/vim-closetag",
 
-	'mattn/emmet-vim',
+	"mattn/emmet-vim",
 
 	-- Template literal syntax highlight
-	'jonsmithers/vim-html-template-literals',
+	"jonsmithers/vim-html-template-literals",
 
 	-- js and ts for vim
-	'leafgarland/typescript-vim',
-	'pangloss/vim-javascript',
+	"leafgarland/typescript-vim",
+	"pangloss/vim-javascript",
 
 	-- Highlight matching tags
-	'gregsexton/MatchTag',
+	"gregsexton/MatchTag",
 
 	-- Auto change string to template after writing ${}
-	'axelvc/template-string.nvim',
+	"axelvc/template-string.nvim",
 
 	-- better quick fix
 	{
-		'kevinhwang91/nvim-bqf',
-		ft = 'qf',
-		enabled = false
+		"kevinhwang91/nvim-bqf",
+		ft = "qf",
 	},
 
-	'dstein64/vim-startuptime',
+	"dstein64/vim-startuptime",
 
 	{
-		'neoclide/coc.nvim',
-		branch = 'release'
+		"neoclide/coc.nvim",
+		branch = "release",
 	},
 
-	'windwp/nvim-ts-autotag',
+	"windwp/nvim-ts-autotag",
 
-	'mboughaba/i3config.vim',
+	"mboughaba/i3config.vim",
 
-	'nanotee/luv-vimdocs',
-	'milisims/nvim-luaref',
+	"nanotee/luv-vimdocs",
+	"milisims/nvim-luaref",
 
 	-- ============ Disabled plugins
 	{
-		'f-person/git-blame.nvim',
-		enabled = false
-	}
+		"f-person/git-blame.nvim",
+		enabled = false,
+	},
 }
