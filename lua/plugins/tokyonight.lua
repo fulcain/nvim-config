@@ -2,6 +2,7 @@ return {
 	"folke/tokyonight.nvim",
 	lazy = false,
 	priority = 1000,
+	enabled = false,
 	opts = {},
 	config = function()
 		local bg = "#1a1b26"
