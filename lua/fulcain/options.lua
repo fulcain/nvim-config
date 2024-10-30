@@ -4,7 +4,12 @@ local opt = vim.opt
 opt.nu = true
 opt.relativenumber = true
 
+opt.ruler = true
+
+opt.conceallevel = 1
+
 opt.autoread = true
+opt.showmode = false
 
 -- Tab related
 opt.tabstop = 4
@@ -52,7 +57,9 @@ vim.g.netrw_winsize = 25
 
 -- Persian language support
 opt.termbidi = true
---
+opt.encoding = "utf-8"
+opt.arabicshape = true
+
 -- Syntax highlight for html template literals
 vim.g.htl_all_templates = true
 
@@ -60,10 +67,10 @@ vim.g.htl_all_templates = true
 -- opt.guicursor = "n-v-c-i:block"
 
 -- Set EJS as html
-vim.api.nvim_command('autocmd BufRead,BufNewFile *.ejs setf html')
+vim.api.nvim_command("autocmd BufRead,BufNewFile *.ejs setf html")
 
 -- Enable Syntax highlight for .conf / .ini
-vim.api.nvim_command('autocmd BufRead,BufNewFile logging.conf setf dosini')
+vim.api.nvim_command("autocmd BufRead,BufNewFile logging.conf setf dosini")
 
 -- highlight while yanking
 vim.api.nvim_create_autocmd("TextYankPost", {
@@ -71,5 +78,5 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	group = vim.api.nvim_create_augroup("custom-hightlight-yank", { clear = true }),
 	callback = function()
 		vim.highlight.on_yank()
-	end
+	end,
 })
