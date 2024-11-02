@@ -15,12 +15,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("fulcain")
-require("lazy").setup( "plugins", {
-	change_detection = {
-		notify = false,
-	},
+require("lazy").setup({ { import = "plugins" }, { import = "plugins.themes" } }, {
 	checker = {
 		enabled = true,
+		notify = false,
+	},
+	change_detection = {
 		notify = false,
 	},
 })
