@@ -2,7 +2,6 @@ return {
 	"folke/tokyonight.nvim",
 	lazy = false,
 	priority = 1000,
-	enabled = false,
 	opts = {},
 	config = function()
 		local bg = "#1a1b26"
@@ -27,8 +26,5 @@ return {
 			sidebars = { "qf", "help" },
 			on_highlights = function() end,
 		})
-
-		-- Theme
-		vim.cmd("colorscheme tokyonight")
 	end,
 }

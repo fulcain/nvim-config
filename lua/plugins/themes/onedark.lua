@@ -40,9 +40,5 @@ return {
 				background = true, -- use background color for virtual text
 			},
 		})
-
-		require("onedark").load()
-
-		-- vim.cmd("colorscheme onedark")
 	end,
 }
