@@ -10,9 +10,6 @@ return {
 				is_hidden_file = function(name)
 					return vim.startswith(name, ".")
 				end,
-				is_always_hidden = function(name)
-					return vim.startswith(name, ".git")
-				end,
 				-- Sort file names in a more intuitive order for humans. Is less performant,
 				-- so you may want to set to false if you work with large directories.
 				natural_order = false,
