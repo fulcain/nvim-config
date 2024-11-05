@@ -14,6 +14,11 @@ return {
 			defaults = {
 				path_display = { "smart" },
 			},
+			pickers = {
+				find_files = {
+					hidden = true,
+				},
+			},
 		})
 
 		local keymap = vim.keymap.set
@@ -25,8 +30,6 @@ return {
 		keymap("n", "<leader>pr", builtin.oldfiles, { desc = "Opens recently opened files in telescope" })
 
 		keymap("n", "<leader>pt", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
-
-		-- keymap("n", "<C-p>", "builtin.git_files", {})
 
 		keymap("n", "<leader>pws", function()
 			local word = vim.fn.expand("<cword>")
