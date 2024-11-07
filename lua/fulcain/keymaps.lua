@@ -84,7 +84,7 @@ keymap("n", "<c-l>", ":wincmd l<CR>", { desc = "remap default vim pane navigatio
 keymap("n", "<leader>+", "<C-a>", { desc = "Increament number" })
 keymap("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 
-keymap({ "i", "x" }, "jk", "<Esc>", { desc = "Changed mode to normal mode" })
+keymap("i", "jk", "<Esc>", { desc = "Changed mode to normal mode" })
 
 -- Save session on vim close
 keymap("n", "ZZ", function()
