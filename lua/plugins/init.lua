@@ -42,8 +42,6 @@ return {
 		branch = "release",
 	},
 
-	"windwp/nvim-ts-autotag",
-
 	"mboughaba/i3config.vim",
 
 	"nanotee/luv-vimdocs",
