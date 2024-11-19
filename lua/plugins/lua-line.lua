@@ -65,6 +65,8 @@ return {
 						color = { fg = "#ff9e64" },
 					},
 				},
+				lualine_y = { "searchcount" },
+				lualine_z = { "vim.fn.expand('%')" },
 			},
 		})
 	end,
