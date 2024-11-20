@@ -47,7 +47,7 @@ keymap("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
 -- Save and source file
 keymap("n", "<leader><leader>s", function()
 	vim.cmd("w")
-	vim.cmd("so")
+	vim.cmd("source %")
 end, { desc = "Save and source" })
 
 -- Saves a file
