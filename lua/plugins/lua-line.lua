@@ -66,7 +66,7 @@ return {
 					},
 				},
 				lualine_y = { "searchcount" },
-				lualine_z = { "vim.fn.expand('%')" },
+				lualine_z = { "vim.fn.expand('%:.')" },
 			},
 		})
 	end,
