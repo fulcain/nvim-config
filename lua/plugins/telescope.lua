@@ -6,6 +6,7 @@ return {
 		"folke/todo-comments.nvim",
 		"nvim-telescope/telescope-fzf-native.nvim",
 	},
+
 	config = function()
 		local builtin = require("telescope.builtin")
 		local telescope = require("telescope")
@@ -31,6 +32,8 @@ return {
 		keymap("n", "<leader>pr", builtin.oldfiles, { desc = "Opens recently opened files in telescope" })
 
 		keymap("n", "<leader>pt", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
+
+		keymap("n", "<leader>ph", "<cmd>Telescope help_tags<cr>", { desc = "Find help tags" })
 
 		keymap("n", "<leader>pws", function()
 			local word = vim.fn.expand("<cword>")
