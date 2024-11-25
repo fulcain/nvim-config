@@ -89,5 +89,5 @@ keymap("i", "jk", "<Esc>", { desc = "Changed mode to normal mode" })
 -- Save session on vim close
 keymap("n", "ZZ", function()
 	vim.cmd("SessionSave")
-	vim.cmd("q")
+	vim.cmd("wq")
 end)

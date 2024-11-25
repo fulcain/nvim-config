@@ -11,12 +11,11 @@ opt.conceallevel = 1
 opt.autoread = true
 opt.showmode = false
 
-
 -- Add a conceal match for the Unicode character U+200C
-vim.fn.matchadd('Conceal', '\\%u200c', 10, -1, { conceal = '|' })
+vim.fn.matchadd("Conceal", "\\%u200c", 10, -1, { conceal = "|" })
 
 -- Set concealcursor to 'nv'
-opt.concealcursor = 'nv'
+opt.concealcursor = "nv"
 
 -- Tab related
 opt.tabstop = 4
