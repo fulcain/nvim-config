@@ -1,5 +1,13 @@
 {
-  "cSpell.userWords": ["jalali", "pelak"],
+  "cSpell.userWords": [
+    "fulcain",
+    "jalali",
+    "lazypath",
+    "nvim",
+    "pelak",
+    "stdpath",
+    "majid",
+  ],
   "coc.preferences.extensionUpdateCheck": "daily",
   "cSpell.enabledLanguageIds": [
     "vim",
