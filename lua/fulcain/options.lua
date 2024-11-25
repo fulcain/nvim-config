@@ -86,3 +86,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+-- folding
+vim.opt.foldmethod = "manual"
+vim.opt.foldcolumn = "0"
+vim.opt.foldlevelstart = 99
+vim.opt.foldtext = ""
+vim.opt.foldlevel = 10000
+vim.opt.foldnestmax = 4
