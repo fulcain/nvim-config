@@ -23,7 +23,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = false
 
-opt.conceallevel = 2
+opt.conceallevel = 0
 
 opt.smartindent = true
 opt.breakindent = true
