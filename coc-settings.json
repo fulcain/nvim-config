@@ -1,3 +1,4 @@
 {
-  "cSpell.userWords": ["jalali", "pelak"]
+  "cSpell.userWords": ["jalali", "pelak"],
+  "coc.preferences.extensionUpdateCheck": "daily"
 }

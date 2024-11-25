@@ -63,10 +63,6 @@ keymap("", "<down>", "<nop>", { desc = "disable arrow down" })
 keymap("", "<left>", "<nop>", { desc = "disable arrow left" })
 keymap("", "<right>", "<nop>", { desc = "disable arrow right" })
 
--- Code spell checker
-keymap("x", "<leader>.", "<Plug>(coc-codeaction-selected)", { desc = "show code action for spell chekcer" })
-keymap("n", "<leader>.", "<Plug>(coc-codeaction-selected)", { desc = "show code action for spell chekcer" })
-
 -- Undotree
 keymap("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Show undo tree" })
 
