@@ -5,8 +5,11 @@ return {
 		require("themery").setup({
 			themes = {
 				"onedark",
-				"rose-pine",
+				"rose-pine-main",
+				"rose-pine-moon",
 				"tokyonight",
+				"catppuccin-mocha",
+				"catppuccin-latte",
 			},
 		})
 	end,
