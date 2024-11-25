@@ -1,12 +1,13 @@
 {
   "cSpell.userWords": [
+    "catppuccin",
     "fulcain",
     "jalali",
     "lazypath",
+    "majid",
     "nvim",
     "pelak",
-    "stdpath",
-    "majid",
+    "stdpath"
   ],
   "coc.preferences.extensionUpdateCheck": "daily",
   "cSpell.enabledLanguageIds": [
