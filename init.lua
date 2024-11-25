@@ -18,6 +18,10 @@ require("fulcain")
 require("lazy").setup({
 	{ import = "plugins" },
 	{ import = "plugins.themes" },
+	{ import = "plugins.ui" },
+	{ import = "plugins.tools" },
+	{ import = "plugins.utilities" },
+	{ import = "plugins.lsp" },
 }, {
 	checker = { enabled = true, notify = false },
 	change_detection = { notify = false },

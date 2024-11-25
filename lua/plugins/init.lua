@@ -5,12 +5,6 @@ return {
 	-- A plugin that tracks the changes to the file since the start of editing
 	"mbbill/undotree",
 
-	-- -- Prettier related
-	-- {
-	-- 	'prettier/vim-prettier',
-	-- 	build  = 'yarn install --frozen-lockfile --production',
-	-- },
-
 	-- Web dev env
 	"alvan/vim-closetag",
 
@@ -26,26 +20,21 @@ return {
 	-- Highlight matching tags
 	"gregsexton/MatchTag",
 
-	-- Auto change string to template after writing ${}
-	"axelvc/template-string.nvim",
-
 	-- better quick fix
 	{
 		"kevinhwang91/nvim-bqf",
 		ft = "qf",
 	},
 
-	"dstein64/vim-startuptime",
-
 	{
-		"neoclide/coc.nvim",
-		branch = "release",
+		"stevearc/dressing.nvim",
+		event = "VeryLazy",
 	},
 
 	"mboughaba/i3config.vim",
 
 	"nanotee/luv-vimdocs",
-	"milisims/nvim-luaref",
+	"milisims/nvim-luaref", -- Add helps
 
 	-- ============ Disabled plugins
 	{
