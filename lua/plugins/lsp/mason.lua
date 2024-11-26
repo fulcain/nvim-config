@@ -30,6 +30,7 @@ return {
 				"lua_ls",
 				"ts_ls",
 				"tailwindcss",
+				"pyright",
 			},
 		})
 		mason_tool_installer.setup({
@@ -37,6 +38,12 @@ return {
 				"prettier",
 				"stylua",
 				"eslint_d",
+				-- python related
+				"black",
+				"flake8",
+				"isort",
+				"mypy",
+				"pylint"
 			},
 		})
 	end,

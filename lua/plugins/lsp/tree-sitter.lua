@@ -30,8 +30,9 @@ return {
 				"gitignore",
 				"query",
 				"json",
+				"python"
 			},
-			sync_install = false,
+			sync_install = true,
 			auto_install = true,
 			indent = {
 				enable = true,
