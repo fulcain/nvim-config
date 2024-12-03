@@ -31,6 +31,7 @@ return {
 				"ts_ls",
 				"tailwindcss",
 				"pyright",
+				"ruff",
 			},
 		})
 		mason_tool_installer.setup({
@@ -42,8 +43,8 @@ return {
 				"black",
 				"flake8",
 				"isort",
+				-- "pylint",
 				"mypy",
-				"pylint"
 			},
 		})
 	end,
