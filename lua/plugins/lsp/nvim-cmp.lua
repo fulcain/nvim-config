@@ -54,6 +54,7 @@ return {
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
 				{ name = "codeium" }, -- file system paths
+				{ name = "tailwindcss" },
 			}),
 		})
 	end,
