@@ -30,7 +30,9 @@ return {
 				"gitignore",
 				"query",
 				"json",
-				"python"
+				"python",
+				"bash",
+				"regex"
 			},
 			sync_install = true,
 			auto_install = true,
