@@ -16,7 +16,23 @@ return {
 		local cmp = require("cmp")
 		local luasnip = require("luasnip")
 
+		require("cmp").setup.filetype("txt", {
+			enabled = false,
+		})
+
 		cmp.setup({
+			enabled = function()
+				local bufnr = vim.api.nvim_get_current_buf()
+				local bufname = vim.api.nvim_buf_get_name(bufnr)
+				local filetype = vim.api.nvim_buf_get_option(bufnr, "filetype")
+
+				-- Disable for unnamed buffers or 'oil' filetype
+				if bufname == "" or filetype == "oil" then
+					return false
+				end
+				return true
+			end,
+			-- Other cmp configuration here
 			completion = {
 				completeopt = "menu,menuone,noselect",
 			},
