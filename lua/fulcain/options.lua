@@ -3,7 +3,7 @@ local opt = vim.opt
 -- Numbe related
 opt.nu = true
 opt.relativenumber = true
-
+vim.opt.laststatus = 3
 opt.ruler = true
 
 opt.conceallevel = 1
