@@ -8,6 +8,8 @@ opt.ruler = true
 
 opt.conceallevel = 1
 
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 opt.autoread = true
 opt.showmode = false
 

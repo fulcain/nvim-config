@@ -1,8 +1,8 @@
 return {
-	"williamboman/mason.nvim",
+	"mason-org/mason.nvim",
 	dependencies = {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		"williamboman/mason-lspconfig.nvim",
+		"mason-org/mason-lspconfig.nvim",
 	},
 	config = function()
 		-- import mason
