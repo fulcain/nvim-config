@@ -59,6 +59,21 @@ For Windows:
 
 ```bash
 choco install fd ripgrep -y
+choco install unzip
+choco install wget
+choco install gzip
+choco install 7zip
+choco install powershell-core
+choco install go
+choco install rust
+choco install lua
+choco install luarocks
+choco install ruby
+choco install php
+choco install composer
+choco install jdk11
+choco install julia
+choco install python
 ```
 
 For macOS:
