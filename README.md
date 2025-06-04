@@ -58,22 +58,7 @@ Telescope requires `fd` and `ripgrep`.
 For Windows:
 
 ```bash
-choco install fd ripgrep -y
-choco install unzip
-choco install wget
-choco install gzip
-choco install 7zip
-choco install powershell-core
-choco install go
-choco install rust
-choco install lua
-choco install luarocks
-choco install ruby
-choco install php
-choco install composer
-choco install jdk11
-choco install julia
-choco install python
+choco install fd ripgrep unzip wget gzip 7zip powershell-core go rust lua luarocks ruby php composer jdk11 julia python -y
 ```
 
 For macOS:
