@@ -4,7 +4,7 @@ return {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",
 	},
-	enabled = false,
+	-- enabled = false,
 	config = function()
 		require("codeium").setup({
 			-- Optionally disable cmp source if using virtual text only
