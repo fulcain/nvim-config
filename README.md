@@ -51,14 +51,11 @@ C:\Users\[userName]\AppData\Local\nvim
 choco install mingw -y
 ```
 
-## Telescope Dependencies
-
-Telescope requires `fd` and `ripgrep`.
-
+## Dependencies
 For Windows:
 
 ```bash
-choco install fd ripgrep -y
+choco install fd ripgrep unzip wget gzip 7zip powershell-core go rust lua luarocks ruby php composer julia python -y
 ```
 
 For macOS:
