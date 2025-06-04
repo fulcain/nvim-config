@@ -55,7 +55,7 @@ choco install mingw -y
 For Windows:
 
 ```bash
-choco install fd ripgrep unzip wget gzip 7zip powershell-core go rust lua luarocks ruby php composer jdk11 julia python -y
+choco install fd ripgrep unzip wget gzip 7zip powershell-core go rust lua luarocks ruby php composer julia python -y
 ```
 
 For macOS:
