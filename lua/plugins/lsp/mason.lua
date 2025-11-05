@@ -5,7 +5,6 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 	},
 	config = function()
-		-- import mason
 		local mason = require("mason")
 
 		-- import mason-lspconfig
