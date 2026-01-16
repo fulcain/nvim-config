@@ -68,7 +68,7 @@ keymap("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Show undo tree" })
 
 -- Shift or tab the selected thing
 keymap("v", "<TAB>", ">gv", { desc = "Tab the selected thing" })
-keymap("v", "<S-TAB>", "<gv", { desc = "SHift tab the selected thing" })
+keymap("v", "<S-TAB>", "<gv", { desc = "Shift tab the selected thing" })
 
 -- Navigate vim panes better
 keymap("n", "<c-k>", ":wincmd k<CR>", { desc = "remap default vim pane navigation" })
