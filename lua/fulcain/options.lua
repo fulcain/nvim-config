@@ -72,7 +72,7 @@ opt.arabicshape = true
 vim.g.htl_all_templates = true
 
 -- Change cursor in all modes to block
--- opt.guicursor = "n-v-c-i:block"
+opt.guicursor = "n-v-c-i:block"
 
 -- Set EJS as html
 vim.api.nvim_command("autocmd BufRead,BufNewFile *.ejs setf html")
@@ -88,6 +88,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.hl.on_yank()
 	end,
 })
+
 -- folding
 vim.opt.foldmethod = "manual"
 vim.opt.foldcolumn = "0"
