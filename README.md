@@ -19,6 +19,12 @@ Install Neovim with WinGet:
 winget install --id Neovim.Neovim --exact
 ```
 
+Install Python as well; Mason needs it to install the configured Python tools (`black`, `flake8`, `isort`, and `mypy`):
+
+```powershell
+winget install --id Python.Python.3.13 --exact
+```
+
 The WinGet installer normally puts Neovim in `C:\Program Files\Neovim\bin`. If `nvim` is not recognized in PowerShell, add that directory to your **user** PATH:
 
 ```powershell

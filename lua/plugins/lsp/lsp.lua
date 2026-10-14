@@ -72,8 +72,23 @@ return {
 			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 		end
 
-		-- Setup mason and mason-lspconfig
-		require("mason").setup()
-		mason_lspconfig.setup()
+		if vim.fn.has("win32") == 1 then
+			-- On Windows, initialize Mason once and wait until nvim-lspconfig is loaded.
+			mason_lspconfig.setup({
+				ensure_installed = {
+					"html",
+					"cssls",
+					"lua_ls",
+					"ts_ls",
+					"tailwindcss",
+					"pyright",
+					"ruff",
+				},
+			})
+		else
+			-- Preserve the existing setup on macOS and Linux.
+			require("mason").setup()
+			mason_lspconfig.setup()
+		end
 	end,
 }

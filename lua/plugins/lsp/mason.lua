@@ -22,17 +22,20 @@ return {
 			},
 		})
 
-		mason_lspconfig.setup({
-			ensure_installed = {
-				"html",
-				"cssls",
-				"lua_ls",
-				"ts_ls",
-				"tailwindcss",
-				"pyright",
-				"ruff",
-			},
-		})
+		if vim.fn.has("win32") ~= 1 then
+			mason_lspconfig.setup({
+				ensure_installed = {
+					"html",
+					"cssls",
+					"lua_ls",
+					"ts_ls",
+					"tailwindcss",
+					"pyright",
+					"ruff",
+				},
+			})
+		end
+
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"prettier",
