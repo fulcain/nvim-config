@@ -12,7 +12,6 @@ return {
 				"catppuccin-latte",
 			},
 		})
+		vim.keymap.set("n", "<leader>ct", "<cmd>Themery<CR>", { desc = "Choose a colorscheme" })
 	end,
-
-	vim.keymap.set("n", "<leader>ct", ":Themery <CR>"),
 }

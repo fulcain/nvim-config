@@ -13,8 +13,35 @@ The package managers I use are as follows:
 
 ### Windows
 
-```bash
-choco install neovim -y
+Install Neovim with WinGet:
+
+```powershell
+winget install --id Neovim.Neovim --exact
+```
+
+The WinGet installer normally puts Neovim in `C:\Program Files\Neovim\bin`. If `nvim` is not recognized in PowerShell, add that directory to your **user** PATH:
+
+```powershell
+$nvimBin = "$env:ProgramFiles\Neovim\bin"
+$userPath = [Environment]::GetEnvironmentVariable("Path", "User")
+$pathEntries = @($userPath -split ";" | Where-Object { $_ })
+
+if ((Test-Path "$nvimBin\nvim.exe") -and $pathEntries -notcontains $nvimBin) {
+    $newPath = (@($pathEntries) + $nvimBin) -join ";"
+    [Environment]::SetEnvironmentVariable("Path", $newPath, "User")
+}
+```
+
+Close and reopen your terminal, then verify the installation:
+
+```powershell
+nvim --version
+```
+
+To install this config on a fresh Windows setup, clone it into Neovim's config directory (make sure the directory does not already contain a config):
+
+```powershell
+git clone https://github.com/fulcain/nvim-config "$env:LOCALAPPDATA\nvim"
 ```
 
 ### macOS
