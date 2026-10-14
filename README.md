@@ -25,6 +25,44 @@ Install Python as well; Mason needs it to install the configured Python tools (`
 winget install --id Python.Python.3.13 --exact
 ```
 
+Tree-sitter on Windows needs a C compiler and `tree-sitter-cli`. Install GCC with WinGet:
+
+```powershell
+winget install --id BrechtSanders.WinLibs.POSIX.UCRT --exact
+```
+
+Install the prebuilt Tree-sitter CLI and add it to your user PATH (copy and paste the whole block):
+
+```powershell
+$version = "0.27.1"
+$zip = "$env:TEMP\tree-sitter-cli-$version-windows-x64.zip"
+$installDir = "$env:LOCALAPPDATA\Programs\tree-sitter-cli\bin"
+$url = "https://github.com/tree-sitter/tree-sitter/releases/download/v$version/tree-sitter-cli-windows-x64.zip"
+$expectedHash = "de043e4c289efcef7981df99988300f23763befdeb36abf7c1898f080c478424"
+
+Invoke-WebRequest -Uri $url -OutFile $zip
+if ((Get-FileHash $zip -Algorithm SHA256).Hash.ToLowerInvariant() -ne $expectedHash) {
+    throw "Tree-sitter CLI download checksum did not match."
+}
+
+New-Item -ItemType Directory -Force -Path $installDir | Out-Null
+Expand-Archive -LiteralPath $zip -DestinationPath $installDir -Force
+$userPath = [Environment]::GetEnvironmentVariable("Path", "User")
+$pathEntries = @($userPath -split ";" | Where-Object { $_ })
+if ($pathEntries -notcontains $installDir) {
+    [Environment]::SetEnvironmentVariable("Path", (($pathEntries + $installDir) -join ";"), "User")
+}
+```
+
+Close and reopen PowerShell, then confirm both prerequisites are available:
+
+```powershell
+gcc --version
+tree-sitter --version
+```
+
+Restart Neovim after that; it will install the configured parsers automatically.
+
 The WinGet installer normally puts Neovim in `C:\Program Files\Neovim\bin`. If `nvim` is not recognized in PowerShell, add that directory to your **user** PATH:
 
 ```powershell
@@ -76,12 +114,6 @@ C:\Users\[userName]\AppData\Local\nvim
 
 ```bash
 ~/.config/nvim
-```
-
-## Install MinGW for the C compiler in Windows
-
-```bash
-choco install mingw -y
 ```
 
 ## Dependencies
