@@ -155,18 +155,3 @@ To repair:
 ```bash
 call coc#util#install()
 ```
-
-# Mason
-
-The LSP and linters installed using Mason in Neovim itself. You can type
-
-```bash
-Mason
-```
-
-To open Mason, then use `/` to search for the following packages
-
-- `css-lsp`
-- `prettier`
-- `tailwindcss-language-server`
-- `typescript-language-server`
